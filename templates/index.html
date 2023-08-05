@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> مترجم الفيديوهات</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    
+    <div class="text">
+        <h1>مترجم الفيديوهات</h1>
+        <p class="des">ترجم جميع فيديوهاتك من أي لغة اللي العربية</p>
+        <a href="{% url 'download' %}">تنزيل البرنامج</a>
+        <p class="downloads">عدد التنزيلات : {{app.downloads}}</p>
+    </div>
+
+
+    <footer>
+        <p>تم الانشاء و التطوير بواسطة رضوان جابر حجازي</p>
+    </footer>
+
+    
+</body>
+</html>
